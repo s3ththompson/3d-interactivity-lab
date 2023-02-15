@@ -9,7 +9,7 @@ Run the following commands:
 # Install dependencies (only the first time)
 npm install
 
-# Run the local server at localhost:8080
+# Run the local server at http://localhost:5173
 npm run dev
 
 # Build for production in the dist/ directory
@@ -46,8 +46,8 @@ The [final examples](https://github.com/s3ththompson/3d-interactivity-lab/tree/f
 1. File > Export Selected > Save as OBJ (\*.obj)
 1. In the OBJ Export Options, check the following settings to ensure that layers are exported as separate parts of the model
 
-- Naming
-  - Export Rhino object names: Do not export object names
-  - Export Rhino layer/group names: Layers as OBJ groups
-- Mesh
-  - Use render meshes
+   - Naming
+     - Export Rhino object names: Do not export object names
+     - Export Rhino layer/group names: Layers as OBJ groups
+   - Mesh
+     - Use render meshes
