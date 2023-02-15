@@ -1,9 +1,10 @@
 import ReactDOM from "react-dom/client";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import { Environment, useGLTF } from "@react-three/drei";
 
 function Scene() {
-  const gltf = useGLTF("/model.gtf");
+  const gltf = useGLTF("/model.gltf");
 
   return (
     <Suspense fallback={null}>
@@ -14,8 +15,9 @@ function Scene() {
 
 function App() {
   return (
-    <Canvas camera={{ fov: 75, position: [0, 1, 0] }}>
+    <Canvas camera={{ fov: 50, position: [-2, 4, 6] }}>
       <Scene />
+      <Environment preset="dawn" background="true" />
     </Canvas>
   );
 }
